@@ -10,3 +10,4 @@ Screenshots/*
 *.unityproj
 *.sublime-project
 *.sublime-workspace
+Builds/*
