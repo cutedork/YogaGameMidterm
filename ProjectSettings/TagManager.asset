@@ -5,7 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - feet
-  - New Tag
+  - flammable
+  - pickUp
   layers:
   - Default
   - TransparentFX
