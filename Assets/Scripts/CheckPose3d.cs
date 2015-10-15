@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 public class CheckPose3d : MonoBehaviour {
 
+	public AudioSource pointSound;
+	public AudioSource loseSound;
+
 	public Text scoreText;
 	private int score;
 	
@@ -75,7 +78,8 @@ public class CheckPose3d : MonoBehaviour {
 		
 		if (_randomLimb3d.TimeUp && !poseCorrect3d){
 			health--;
-			Debug.Log ("YOU LOST HEALTH");
+			loseSound.Play ();
+			//Debug.Log ("YOU LOST HEALTH");
 		}
 		
 		if (_randomLimb3d.TimeUp) {

@@ -4,6 +4,11 @@ using System.Collections;
 public class ChangeLimbs3d : MonoBehaviour {
 
 	public float turnSpeed = 10f;
+	public AudioSource rArmSound; 
+	public AudioSource lArmSound; 
+	public AudioSource rLegSound; 
+	public AudioSource lLegSound; 
+
 	
 	//limbs
 	public GameObject leftArm;
@@ -87,6 +92,9 @@ public class ChangeLimbs3d : MonoBehaviour {
 		
 		if (Input.GetKeyDown(KeyCode.F)) { 
 
+			//play sound effect
+			lArmSound.Play ();
+
 			leftArmState++;
 			if (leftArmState > 2) {
 				leftArmState = 0;
@@ -110,6 +118,9 @@ public class ChangeLimbs3d : MonoBehaviour {
 		// press F to change right arm 
 		if (Input.GetKeyDown (KeyCode.J)) {
 
+			//play sound effect
+			rArmSound.Play ();
+
 			rightArmState++;
 			if (rightArmState > 2) {
 				rightArmState = 0;
@@ -132,6 +143,9 @@ public class ChangeLimbs3d : MonoBehaviour {
 		
 		if (Input.GetKeyDown (KeyCode.D)) {
 
+			//play sound effect
+			lLegSound.Play ();
+
 			leftLegState++;
 			if (leftLegState > 1) {
 				leftLegState = 0;
@@ -150,6 +164,9 @@ public class ChangeLimbs3d : MonoBehaviour {
 		// press K to change right leg
 		
 		if (Input.GetKeyDown (KeyCode.K)) {
+
+			//play sound effect
+			rLegSound.Play ();
 
 			rightLegState++;
 			if (rightLegState > 1) {

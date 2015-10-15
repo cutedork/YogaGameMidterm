@@ -4,8 +4,7 @@ using UnityEngine.UI;
 
 public class RandomLimb3d : MonoBehaviour {
 
-	public AudioClip singingBowl; 
-	AudioSource audio;
+	public AudioSource singingBowlSound;
 	
 	private int currentSeconds;
 	public float maxCountDown;
@@ -71,9 +70,6 @@ public class RandomLimb3d : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-	
-
-		audio = GetComponent<AudioSource>();
 		_checkPose3d = GetComponent<CheckPose3d>();
 		
 		//leftArm.transform.eulerAngles = new Vector3(0f, 0f, 90f); 
@@ -146,8 +142,8 @@ public class RandomLimb3d : MonoBehaviour {
 		if (countDown < 0) {
 			timeUp = true;
 			// play singing bowl clip 
-			audio.PlayOneShot (singingBowl);
-			
+			singingBowlSound.Play ();
+
 			// reset countdown
 			countDown = maxCountDown;
 			Debug.Log ("COUNT DOWN REACHED ZERO"); // this works

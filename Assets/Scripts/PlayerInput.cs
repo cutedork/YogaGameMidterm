@@ -5,6 +5,7 @@ public class PlayerInput : MonoBehaviour {
 	
 	public float moveSpeed = 5f; 
 	public float turnSpeed = 10f;
+
 	
 	//Vector3 cameraPos = new Vector3(0f, 2.5f, -3.66f);
 	Quaternion targetRotation = Quaternion.Euler(0f, 0f, 0f); // target rotation 
