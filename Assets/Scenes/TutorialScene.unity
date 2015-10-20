@@ -287,7 +287,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 88417712}
   - 82: {fileID: 88417711}
-  - 114: {fileID: 88417710}
   m_Layer: 0
   m_Name: buzzer
   m_TagString: Untagged
@@ -295,18 +294,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &88417710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 88417709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f5ab27eb039f4804a5ce6e995b4b2ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mySound: {fileID: 88417711}
 --- !u!82 &88417711
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2074,10 +2061,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .35280025, g: .240999997, b: .683823526, a: 1}
+  m_Color: {r: .345996976, g: .16933392, b: .79411763, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: d0ed74302d12b4887bb497f80fc61a44, type: 3}
-    m_FontSize: 30
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10

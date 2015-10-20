@@ -50,10 +50,12 @@ public class ChangeLimbs3d : MonoBehaviour {
 
 		//leftArm.transform.eulerAngles = new Vector3(0f, 0f, 90f); 
 		leftArmTargetRotation = Quaternion.Euler(0f, 0f, 90f); 
+		//leftArmTargetRotation = Quaternion.Euler(0f, 0f, 80f);
 		leftArmState = 1;
 
 		//rightArm.transform.eulerAngles = new Vector3(0f, 0f, -90f);
 		rightArmTargetRotation = Quaternion.Euler(0f, 0f, -90f); 
+		//rightArmTargetRotation = Quaternion.Euler(0f, 0f, -80f);
 		rightArmState = 1;
 
 		//leftLeg.transform.eulerAngles = new Vector3(0f, 0f, 0f);
@@ -90,7 +92,7 @@ public class ChangeLimbs3d : MonoBehaviour {
 		
 		// press D to change left arm 
 		
-		if (Input.GetKeyDown(KeyCode.F)) { 
+		if (Input.GetKeyDown(KeyCode.E)) { 
 
 			//play sound effect
 			lArmSound.Play ();
@@ -106,6 +108,7 @@ public class ChangeLimbs3d : MonoBehaviour {
 			} else if (leftArmState == 1) {
 				//leftArm.transform.eulerAngles = new Vector3(0f, 0f, 90f); // arm down 
 				leftArmTargetRotation = Quaternion.Euler(0f, 0f, 90f);
+				//leftArmTargetRotation = Quaternion.Euler(0f, 0f, 80f);
 			} else if (leftArmState == 2) {
 				//leftArm.transform.eulerAngles = new Vector3(0f, 0f, 0f); // arm out 
 				leftArmTargetRotation = Quaternion.Euler(0f, 0f, 0f);
@@ -116,7 +119,7 @@ public class ChangeLimbs3d : MonoBehaviour {
 		}
 		
 		// press F to change right arm 
-		if (Input.GetKeyDown (KeyCode.J)) {
+		if (Input.GetKeyDown (KeyCode.I)) {
 
 			//play sound effect
 			rArmSound.Play ();
@@ -131,6 +134,7 @@ public class ChangeLimbs3d : MonoBehaviour {
 			} else if (rightArmState == 1) {
 				//rightArm.transform.eulerAngles = new Vector3(0f, 0f, -90f); // arm down 
 				rightArmTargetRotation = Quaternion.Euler(0f, 0f, -90f);
+				//rightArmTargetRotation = Quaternion.Euler(0f, 0f, -80f);
 			} else if (rightArmState == 2) {
 				//rightArm.transform.eulerAngles = new Vector3(0f, 0f, 0f); // arm out 
 				rightArmTargetRotation = Quaternion.Euler(0f, 0f, 0f);
@@ -141,7 +145,7 @@ public class ChangeLimbs3d : MonoBehaviour {
 		}
 		// press J to change left leg 
 		
-		if (Input.GetKeyDown (KeyCode.D)) {
+		if (Input.GetKeyDown (KeyCode.F)) {
 
 			//play sound effect
 			lLegSound.Play ();
@@ -163,7 +167,7 @@ public class ChangeLimbs3d : MonoBehaviour {
 		
 		// press K to change right leg
 		
-		if (Input.GetKeyDown (KeyCode.K)) {
+		if (Input.GetKeyDown (KeyCode.J)) {
 
 			//play sound effect
 			rLegSound.Play ();

@@ -438,6 +438,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6894207351032448681fd9d90cdccbe8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6894207351032448681fd9d90cdccbe8, type: 3}
   m_IsPrefabParent: 0
@@ -2783,7 +2787,7 @@ MonoBehaviour:
   m_Color: {r: .889452398, g: 1, b: .198529422, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: d0ed74302d12b4887bb497f80fc61a44, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -2793,8 +2797,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You're too tired, so the yoga instructor told you to remain in child's pose
-    for the rest of the class :'(
+  m_Text: '
+
+    You''re too tired, you must remain in child''s pose for the rest of the class
+    :''(
+
+
+    Press space to restart.'
 --- !u!222 &1273729397
 CanvasRenderer:
   m_ObjectHideFlags: 0

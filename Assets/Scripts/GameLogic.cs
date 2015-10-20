@@ -25,7 +25,7 @@ public class GameLogic : MonoBehaviour {
 		if (other.tag == "feet") {
 			// this means food has hit this collider
 			//send message to game manager
-			Application.LoadLevel("3dPrototype");
+			Application.LoadLevel("TutorialScene");
 		}
 
 	}
